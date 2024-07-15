@@ -3,3 +3,4 @@ phases:
   build:
     commands:
       - echo "Buildspec 2"
+      - cat /codebuild/readonly/buildspec.yml
