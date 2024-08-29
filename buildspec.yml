@@ -2,12 +2,10 @@ version: 0.2
 phases:
   build:
     commands:
-      - ls 
-      - cat /codebuild/readonly/buildspec.yml
-      # - yarn
-      # - yarn add --dev jest-junit @babel/plugin-proposal-private-property-in-object
-      # - yarn run build
-      # - yarn run test -- --coverage --watchAll=false --testResultsProcessor="jest-junit" --detectOpenHandles
+      - yarn
+      - yarn add --dev jest-junit @babel/plugin-proposal-private-property-in-object
+      - yarn run build
+      - yarn run test -- --coverage --watchAll=false --testResultsProcessor="jest-junit" --detectOpenHandles
 # artifacts:
 #   name: "build-output"
 #   files:
